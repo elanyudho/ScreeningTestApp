@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">ScreeningTestApp</string>
+    <string name="next">Next</string>
+    <string name="input_your_name">input your name</string>
+    <string name="nama">Nama</string>
+    <string name="pilih_event">Pilih Event</string>
+    <string name="pilih_guest">Pilih Guest</string>
+</resources>
