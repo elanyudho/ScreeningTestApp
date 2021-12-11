@@ -11,11 +11,15 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:usesCleartextTraffic="true"
-        android:theme="@style/Theme.ScreeningTestApp">
+        android:theme="@style/Theme.ScreeningTestApp"
+        android:usesCleartextTraffic="true">
         <activity android:name=".ui.guest.GuestActivity" />
-        <activity android:name=".ui.event.EventActivity" />
-        <activity android:name=".ui.home.HomeActivity">
+        <activity
+            android:name=".ui.event.EventActivity"
+            android:theme="@style/clearScreen" />
+        <activity
+            android:name=".ui.home.HomeActivity"
+            android:theme="@style/clearScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

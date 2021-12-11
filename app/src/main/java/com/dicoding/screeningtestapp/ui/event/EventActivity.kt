@@ -16,9 +16,10 @@ class EventActivity : BaseActivityBinding<ActivityEventBinding>() {
         get() = { ActivityEventBinding.inflate(layoutInflater) }
 
     override fun setupView() {
-        supportActionBar?.title = "Event"
         eventAdapter.submitList(DummyData.listEvent())
         setEventAdapter()
+
+        binding.btnBack.setOnClickListener { onBackPressed() }
     }
 
     private fun setEventAdapter() {

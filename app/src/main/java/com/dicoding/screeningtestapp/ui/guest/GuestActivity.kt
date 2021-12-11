@@ -76,4 +76,14 @@ class GuestActivity : BaseActivityBinding<ActivityGuestBinding>() {
         }
     }
 
+    //Determine the month is prime or not.
+    fun String.checkPrimeMonth(): String {
+        for (i in 2..this.toInt() /  2) {
+            if (this.toInt() % i == 0) {
+                return "The month is not prime"
+            }
+        }
+        return "The month is prime"
+    }
+
 }
